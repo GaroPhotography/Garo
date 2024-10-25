@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotograf - Dominik Gerić</title>
+    <style>
+        /* Osnovni stilovi */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .gallery {
+            display:flexbox;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Promijenjeno na 150px */
+            gap: 10px;
+            margin: 2rem 0;
+        }
+        .gallery img {
+            width: 70%;
+            height: auto;
+            max-width: 150px; /* Maksimalna širina slike postavljena na 150px */
+            border-radius: 5px;
+        }
+        .about, .contact {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Zaglavlje stranice -->
+    <header class="header">
+        <h1>Garo.Photography - Fotograf</h1>
+        <p>Specijaliziran za Automoto slikanje i slikanje Eventova</p>
+    </header>
+
+    <div class="container">
+
+        <!-- O meni sekcija -->
+        <section class="about">
+            <h2>O meni,</h2>
+            <p>Ja sam fotograf iz Zagreba, strastven amater s posebnim interesom za automoto slikanje. Iako se bavim fotografijom amaterski, moja želja je uhvatiti svaki trenutak koji čini ovaj svijet automobila posebnim. Kroz objektiv svog fotoaparata nastojim zabilježiti uzbuđenje i ljepotu automoto sadržaja, bilo da se radi o elegantnim automobilima na izložbama, dinamičnim scenama s utrka ili svakodnevnim trenucima koji prikazuju ljubav prema automobilizmu. Pozivam vas da pogledate moju galeriju ispod i otkrijete moj rad te uživate u slikama koje govore više od riječi.</p>
+        </section>
+
+        <!-- Galerija fotografija -->
+        <section class="gallery">
+            <h2>ADRIA-MEET</h2>
+            <div class="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET">
+                <img src= "C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8058.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8069.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8068.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8071.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8072.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8139.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8144.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8164.JPG" alt="">
+                <img src="C:\Users\geric\OneDrive\Pictures\DCIM\ADRIA-MEET\IMG_8191.JPG" alt="">
+                <!-- Dodaj još slika po potrebi -->
+            </div>
+        </section>
+
+        <!-- Kontakt sekcija -->
+        <section class="contact">
+            <h2>Kontakt</h2>
+            <p>Kontakt: garo.photography.cmp@gmail.com IG: Garo.foto(garo.photography)</p>
+            <p>Imate pitanje ili želite rezervirati fotografiranje? Ispunite obrazac ispod ili me kontaktirajte putem e-pošte ili telefona.</p>
+            <form class="contact-form" action="mailto:garo.photography.cmp@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Vaše ime" required>
+                <input type="email" name="email" placeholder="Vaša e-pošta" required>
+                <textarea name="message" rows="5" placeholder="Vaša poruka" required></textarea>
+                <button type="submit">Pošaljite poruku</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Podnožje stranice -->
+    <footer class="footer">
+        <p>&copy; 2024 Dominik Gerić - Fotograf. Sva prava pridržana.</p>
+    </footer>
+
+</body>
+</html>
